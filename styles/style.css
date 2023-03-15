@@ -28,6 +28,7 @@
   margin: 0 auto;
   background-color: #2A2C2F;
   color: #fff;
+  position: relative;
 }
 
 header {
@@ -62,7 +63,7 @@ header {
 }
 
 .lead {
-  width: 984px;
+  width: 77%;
   padding: 56px 0 0;
   margin: 0 auto;
   position: relative;
@@ -71,7 +72,7 @@ header {
 
 .lead__title {
   width: 720px;
-  height: 200px;
+  min-height: 200px;
   font-size: 96px;
   font-weight: 900;
   text-align: center;
@@ -83,7 +84,7 @@ header {
 
 .lead__subtitle {
   width: 640px;
-  height: 72px;
+  min-height: 72px;
   font-size: 30px;
   font-weight: 400;
   text-align: center;
@@ -94,8 +95,8 @@ header {
 }
 
 .lead__image {
-  width: 984px;
-  height: 615px;
+  width: 100%;
+  max-height: 615px;
   position: relative;
   margin: 64px auto 0;
   padding: 0;
@@ -103,7 +104,7 @@ header {
 
 .lead__caption {
   width: 160px;
-  height: 14px;
+  min-height: 14px;
   font-size: 10px;
   font-weight: 400;
   margin: 8px 0 0;
