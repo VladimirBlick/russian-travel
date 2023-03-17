@@ -33,14 +33,12 @@
   background-color: #2A2C2F;
 }
 
-header {
-  width: 288px;
-  height: 42px;
+.header {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 16px 0 0;
-  align-items: end;
+  padding: 16px 16px 0;
 }
 
 .header__logo {
@@ -49,33 +47,35 @@ header {
   border-radius: 0px;
 }
 
-.header__lang {
+.header__lang{
   font-size: 18px;
   line-height: 20px;
   color: #fff;
   font-weight: 400;
   text-decoration: none;
   margin-right: 18px;
+  margin-top: 15px;
+  display: inline-block;
 }
 
-.header__lang:last-of-type {
+.header__lang:last-of-type{
   margin-right: 0;
 }
 
-.header__lang:first-of-type {
-  text-decoration: underline;
+.header__lang_active {
+text-decoration: underline;
 }
 
+
 .lead {
-  min-width: 320px;
-  min-height: 406px;
+  width: 100%;
   padding: 48px 0 0;
   margin: 0 auto;
   position: relative;
 }
 
 .lead__title {
-  min-width: 288px;
+  width: 288px;
   min-height: 88px;
   font-size: 40px;
   line-height: 44px;
@@ -87,7 +87,7 @@ header {
 }
 
 .lead__subtitle {
-  min-width: 288px;
+  width: 288px;
   min-height: 40px;
   font-size: 16px;
   line-height: 20px;
@@ -100,7 +100,6 @@ header {
 
 .lead__image {
   width: 100%;
-  min-height: 200px;
   margin: 40px auto 0;
   position: relative;
   padding: 0;
@@ -108,7 +107,7 @@ header {
 }
 
 .lead__caption {
-  min-width: 160px;
+  width: 160px;
   min-height: 14px;
   font-size: 10px;
   font-weight: 400;
@@ -119,18 +118,50 @@ header {
   text-transform: uppercase;
 }
 
+.intro{
+  width: 90%;
+  min-height: 754px;
+  margin: 0 auto;
+  padding: 64px 0 0;
+}
+
+  .intro__title{
+font-size: 32px;
+line-height: 35px;
+font-weight: 900;
+margin: 0;
+}
+
+.intro__text{
+  font-size: 16px;
+  line-height: 163%;
+  font-weight: 400;
+  margin: 40px 0 0;
+}
+
+.intro__list{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 34px 0 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.intro__span-accent{
+  font-weight: 700;
+}
+
 @media all and (min-width:768px) {
 
   .header{
-    min-width: 720px;
-    min-height: 52px;
-    margin: 0 auto;
-    padding: 24px 0 0;
+    width: 94%;
+    padding: 28px 0 0;
   }
 
   .header__logo {
-    min-width: 176px;
-    min-height: 52px;
+    width: 176px;
+    height: 52px;
 }
 
 .header__lang {
@@ -138,33 +169,73 @@ header {
   line-height: 28px;
 }
 
-.lead {
-  min-width: 768px;
-  min-height: 862px;
-}
-
 .lead__title {
-  min-width: 720px;
-  min-height: 200px;
+  width: 720px;
   font-size: 96px;
   line-height: 100px;
 }
 
 .lead__subtitle {
-  min-width: 640px;
-  min-height: 72px;
+  width: 640px;
   font-size: 30px;
   line-height: 36px;
-margin: 32px 64px 0;
+  margin: 32px auto 0;
 }
 
 .lead__image {
   width: 100%;
-  min-height: 480px;
+  max-width: 928px;
   margin: 56px auto 0;
 }
 
 .lead__caption {
   margin: 8px 0 0 24px;
+}
+
+.intro{
+  width: 94%;
+  padding: 88px 0 0;
+}
+
+.intro__title{
+font-size: 54px;
+line-height: 58px;
+}
+}
+
+@media all and (min-width:1024px) {
+
+  .header{
+    width: 90.7%;
+    min-height: 52px;
+  }
+
+  .lead{
+    width: 91%;
+    min-height: 962px;
+  }
+
+  .lead__caption {
+    margin: 8px 0 48px;
+  }
+  .lead__image {
+    max-width: 984px;
+  }
+}
+
+@media all and (min-width:1280px) {
+
+.header{
+  width: 93%;
+  max-width: 1184px;
+}
+
+.lead{
+  max-width: 984px;
+  padding: 56px 0;
+  }
+
+  .lead__image {
+    margin: 64px auto 0;
 }
 }
