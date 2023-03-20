@@ -211,6 +211,7 @@ object-fit: cover;
   font-weight: 400;
   color: #AAAAAA;
   margin: 0;
+  letter-spacing: 2px;
 }
 
 .place__link{
@@ -287,7 +288,8 @@ object-fit: cover;
     grid-template-rows: repeat(6, 1fr);
     margin: 88px auto 0;
     width: 94%;
-    gap: 16px;}
+    gap: 16px;
+  }
 
     .places{
       width: 94%;
@@ -296,12 +298,29 @@ object-fit: cover;
 
     .place{
       grid-template-columns: 47% 49%;
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: 92px auto;
       margin: 73px auto 0;
       column-gap: 28px;
       row-gap: 48px;
     }
 
+    .place__title{
+      font-size: 42px;
+      line-height: 46px;
+      margin: 0;
+      padding: 0;
+    }
+
+      .place__website{
+        height: 92px;
+        justify-content: end;
+      }
+
+      .place__link{
+        margin: 12px 0 0;
+      }
+
+    }
 }
 
 @media screen and (min-width:1024px) {
