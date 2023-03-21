@@ -151,7 +151,7 @@
   font-weight: 700;
 }
 
-.photo-grid{
+.photo-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -160,44 +160,44 @@
   gap: 12px;
 }
 
-.photo-grid__item{
-width: 100%;
-height: 100%;
-object-fit: cover;
+.photo-grid__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.places{
-  width: 100;
+.places {
+  width: 100%;
   margin: 64px auto 0;
+  display: grid;
+  flex-direction: column;
+  row-gap: 50px;
 }
 
-.place{
+.place {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto;
-  margin: 32px auto 0;
+  grid-auto-rows: minmax(auto);
+  margin: 0 auto;
   gap: 32px;
-  position: relative;
 }
 
-.place__title{
+.place__title {
   width: 90%;
   font-size: 32px;
   line-height: 35px;
   font-weight: 900;
-  margin: 0 auto;
+  margin: 0 16px;
   padding: 0;
 }
 
-.place__image{
-width: 100%;
-height: 100%;
-object-fit: cover;
+.place__image {
+  width: 100%;
+  object-fit: contain;
 }
 
-.place__website{
+.place__website {
   width: 90%;
-  height: 46px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -205,7 +205,7 @@ object-fit: cover;
   justify-content: space-between;
 }
 
-.place__url-heading{
+.place__url-heading {
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -214,21 +214,26 @@ object-fit: cover;
   letter-spacing: 2px;
 }
 
-.place__link{
+.place__link {
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
   color: rgb(255, 255, 255);
+  margin: 12px 0 0;
 }
 
-.place__paragraph{
+.place__paragraph {
   font-size: 16px;
-  line-height: 163%;
+  line-height: 162%;
   font-weight: 400;
   white-space: pre-line;
-  width:90%;
+  width: 90%;
   margin: 0 auto;
   padding: 0;
+}
+
+.cover{
+  
 }
 
 @media screen and (min-width:768px) {
@@ -283,7 +288,7 @@ object-fit: cover;
     line-height: 58px;
   }
 
-  .photo-grid{
+  .photo-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     margin: 88px auto 0;
@@ -291,36 +296,46 @@ object-fit: cover;
     gap: 16px;
   }
 
-    .places{
-      width: 94%;
-      margin: 88px auto 0;
-    }
+  .places {
+    width: 94%;
+    margin: 88px auto 0;
+    row-gap: 73px;
+  }
 
-    .place{
-      grid-template-columns: 47% 49%;
-      grid-template-rows: 92px auto;
-      margin: 73px auto 0;
-      column-gap: 28px;
-      row-gap: 48px;
-    }
+  .place {
+    grid-template-columns: 47% 49%;
+    column-gap: 28px;
+    row-gap: 48px;
+  }
 
-    .place__title{
-      font-size: 42px;
-      line-height: 46px;
-      margin: 0;
-      padding: 0;
-    }
+  .place__title {
+    width: 97%;
+    font-size: 42px;
+    line-height: 46px;
+    margin: 0;
+    padding: 0;
+    align-self: start;
+  }
 
-      .place__website{
-        height: 92px;
-        justify-content: end;
-      }
+  .place__website {
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+  }
 
-      .place__link{
-        margin: 12px 0 0;
-      }
+  .place__link {
+    margin: 12px 0 0;
+  }
 
-    }
+  .place__image {
+    align-self: start;
+  }
+
+  .place__paragraph {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width:1024px) {
@@ -347,12 +362,34 @@ object-fit: cover;
     max-width: 690px;
   }
 
-  .photo-grid{
+  .photo-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin: 92px auto 0;
     max-width: 928px;
-    gap: 14px;}
+    gap: 14px;
+  }
+
+  .places {
+    max-width: 928px;
+    margin: 92px auto 0;
+    row-gap: 80px;
+  }
+
+  .place__title {
+    font-size: 72px;
+    line-height: 76px;
+  }
+
+  .place {
+    grid-template-columns: 47.5% 49%;
+    column-gap: 32px;
+  }
+
+  .place__paragraph {
+    font-size: 18px;
+    line-height: 161%;
+  }
 }
 
 @media screen and (min-width:1280px) {
@@ -376,10 +413,21 @@ object-fit: cover;
     margin: 92px auto 0;
   }
 
-  .photo-grid{
+  .photo-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 93%;
     max-width: 1184px;
-    gap: 16px;}
+    gap: 16px;
+  }
+
+
+  .places {
+    max-width: 984px;
+  }
+
+  .place {
+    grid-template-columns: 46.8% 49%;
+    column-gap: 40px;
+  }
 }
