@@ -1,0 +1,25 @@
+.place__paragraph {
+  font-size: 16px;
+  line-height: 162%;
+  font-weight: 400;
+  white-space: pre-line;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (min-width:768px) {
+  .place__paragraph {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .place__paragraph {
+    font-size: 18px;
+    line-height: 161%;
+  }
+}
+

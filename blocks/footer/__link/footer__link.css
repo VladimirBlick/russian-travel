@@ -1,0 +1,33 @@
+.footer__link {
+  margin: 0 0 32px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  list-style-type: none;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.8s;
+}
+
+.footer__link:last-of-type {
+  margin: 0 0 48px;
+}
+
+.footer__link:hover {
+  opacity: 50%;
+}
+
+@media screen and (min-width:768px) {
+  .footer__link {
+    display: inline;
+    margin: 0 18px 0 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .footer__link:last-of-type {
+    margin: 0px;
+  }
+  }
+

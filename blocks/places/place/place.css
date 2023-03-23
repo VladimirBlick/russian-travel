@@ -1,0 +1,29 @@
+.place {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: minmax(auto);
+  margin: 0 auto;
+  gap: 32px;
+}
+
+@media screen and (min-width:768px) {
+  .place {
+    grid-template-columns: 47% 49%;
+    column-gap: 28px;
+    row-gap: 48px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .place {
+    grid-template-columns: 47.5% 49%;
+    column-gap: 32px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .place {
+    grid-template-columns: 46.8% 49%;
+    column-gap: 40px;
+  }
+}

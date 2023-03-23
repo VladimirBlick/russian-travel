@@ -1,0 +1,17 @@
+.place__website {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width:768px) {
+  .place__website {
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+  }
+}
+
