@@ -20,5 +20,5 @@
   font-weight:900;
   src: local("Inter-Black"),
     local("Inter-Black"),
-    url("/fonts/Inter-Black.woff") format("woff") url("/fonts/Inter-Black.woff2") format("woff2")
+    url("/fonts/Inter-Black.woff") format("woff") url("/fonts/Inter-Black.woff2") format("woff2");
 }
