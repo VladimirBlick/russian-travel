@@ -19,7 +19,7 @@
 
 @media screen and (min-width:768px) {
   .footer__link {
-    display: inline;
+    display: inline; /*если я убираю это свойство, мои линки располагаются в столбик, можно ли оставить дисплей инлайн, что б не менять логику построения для расположения во флексе линков?*/
     margin: 0 18px 0 0;
     padding: 0;
     font-size: 16px;

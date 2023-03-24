@@ -14,10 +14,6 @@
   margin-right: 0;
 }
 
-.header__lang_active {
-  text-decoration: underline;
-}
-
 .header__lang:hover {
   opacity: 0.8;
 }
